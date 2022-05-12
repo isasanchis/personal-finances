@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+}
+
+.nav__list--item {
+    align-items: center;
+    color: rgb(255,255,255);  
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 1em;
+}
+
+.nav__list--name {
+    margin-left: 0.3em;
+}
