@@ -2,7 +2,9 @@ import React from 'react'
 
 const CreateSaving = () => {
   return (
-    <div>CreateSaving</div>
+    <form action="POST">
+      
+    </form>
   )
 }
 

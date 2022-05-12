@@ -1,23 +1,20 @@
 import "./nav.css";
 import { BiHome } from "react-icons/bi";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
     <nav className="nav">
       <ul className="nav__list">
-        <a href="#">
-          <li className="nav__list--item">
-            <BiHome /> 
-            <span className="nav__list--name">Home</span>
+        <li className="nav__list--item">
+          <BiHome /> 
+          <Link to="/" className="nav__list--name">Home</Link>
           </li>
-        </a>
-        <a href="#">
-          <li className="nav__list--item">
-            <FaRegMoneyBillAlt /> 
-            <span className="nav__list--name">New saving</span>
-          </li>
-        </a>
+        <li className="nav__list--item">
+          <FaRegMoneyBillAlt /> 
+          <Link to="/create" className="nav__list--name">New saving</Link>
+        </li>
       </ul>
     </nav>
   );

@@ -1,10 +1,11 @@
 import { useState, createContext } from 'react';
 import './App.css';
 import { Savings } from "./@types/Savings";
-import Content from "./components/Content";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import RoutesConfig from './components/RoutesConfig';
+import { BrowserRouter as Router } from "react-router-dom";
 
 type Context = {
   savings: Savings[],
@@ -19,10 +20,12 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <AppContext.Provider value={{ savings, setSavings }}>
-        <Header />
-        <Nav />
-        <Content />
-        <Footer />
+        <Router>
+          <Header />
+          <Nav />
+          <RoutesConfig />
+          <Footer />
+        </Router>
       </AppContext.Provider>
     </div>
   );
