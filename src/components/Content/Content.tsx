@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from 'react';
-import "./items.css";
+import "./styles.css";
 import axios from "axios";
-import SingleItem from './SingleItem';
-import { AppContext } from '../App';
+import SingleItem from '../SingleItem/SingleItem';
+import { AppContext } from '../../App';
 
 const Content: React.FC = () => {
   const {savings, setSavings} = useContext(AppContext);

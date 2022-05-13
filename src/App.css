@@ -1,40 +1,9 @@
 .App {
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template: [header-left] "head head" 3em [header-right]
-                   [main-left] "nav  main" 1fr [main-right]
-                   [footer-left] "nav  foot" 2em [footer-right]
-                   / 10em 1fr;
-    background-color: #f4f4f4;
-  }
-  
-.header {
-  align-items: center;
-  background-color: rgb(160, 201, 236);
-  color:rgb(255,255,255);
-  display: flex;
-  font-size: 1.4rem;
-  font-weight: bold;
-  grid-area: head;
-  justify-content: center;
-}
-
-.nav {
-  background-color: rgb(145, 63, 115);
-  grid-area: nav;
-}
-
-.main {
-  grid-area: main;
-}
-
-.footer {
-  align-items: center;
-  background-color: rgb(255, 115, 63);
-  color:rgb(255,255,255);
-  display: flex;
-  font-weight: bold;
-  grid-area: foot;
-  justify-content: center;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template: [header-left] "nav head" 3em [header-right]
+                  [main-left] "nav  main" 1fr [main-right]
+                  / 10em 1fr;
+  background-color: #f4f4f4;
 }

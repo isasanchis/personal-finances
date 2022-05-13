@@ -1,10 +1,9 @@
 import { useState, createContext } from 'react';
 import './App.css';
 import { Savings } from "./@types/Savings";
-import Header from "./components/Header";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
-import RoutesConfig from './components/RoutesConfig';
+import Header from "./components/Header/Header";
+import Nav from "./components/Nav/Nav";
+import RoutesConfig from './service/RoutesConfig';
 import { BrowserRouter as Router } from "react-router-dom";
 
 type Context = {
@@ -24,7 +23,6 @@ const App: React.FC = () => {
           <Header />
           <Nav />
           <RoutesConfig />
-          <Footer />
         </Router>
       </AppContext.Provider>
     </div>

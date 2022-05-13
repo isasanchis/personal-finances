@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
-import "./items.css";
-import { AppContext } from '../App';
+import "./styles.css";
+import { AppContext } from '../../App';
 import { BiEdit } from "react-icons/bi";
 import { AiFillDelete } from "react-icons/ai";
 import { CgSmartHomeRefrigerator } from "react-icons/cg";

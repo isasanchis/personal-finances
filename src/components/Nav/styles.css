@@ -1,0 +1,43 @@
+a {
+    text-decoration: none;
+}
+
+.nav__title {
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 0.1em solid rgba(6,55,119,255);
+    color: rgb(255,255,255);
+    display: flex;
+    height: 2.5em;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.nav {
+    background-color: rgb(24, 39, 77);
+    grid-area: nav;
+}
+
+.nav__list {
+    padding: 0;
+}
+
+.nav__list--item {
+    align-items: center;
+    color: rgb(255,255,255);  
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 1.5em;
+    margin-left: 1em;
+}
+
+.nav__list--name {
+    color: rgb(255,255,255);  
+    margin-left: 0.5em;
+}
+
+.nav__list--icon {
+    font-size: 1.3em;
+}

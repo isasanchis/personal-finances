@@ -9,7 +9,7 @@ export enum SavingType {
 }
 
 export type Savings = {
-    id: number,
+    id?: number,
     name: string,
     price: string,
     date: string,
