@@ -1,0 +1,55 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.toastProgress {
+    background: #07bc0c !important;
+}
+
+.form__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+}
+
+.form__title {
+    display: flex;
+    justify-content: center;
+}
+
+.create__input {
+    padding: 1em;
+    margin: 0.1em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+form > div > input, form > div > select {
+    border-radius: 0.3em;
+    border: 0.1em solid rgb(128, 128, 128);
+    padding: 0.8em;
+    width: 18em;
+    box-sizing: border-box;
+}
+
+.button__submit--form {
+    margin: 0.8em;
+    padding: 1em;
+    border: 0.1em solid rgb(128, 128, 128);
+    border-radius: 0.5em;
+    cursor: pointer;
+    background-color: rgb(244, 244, 244);
+    transition: 0.2s;
+}
+.button__submit--form:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.9;
+}

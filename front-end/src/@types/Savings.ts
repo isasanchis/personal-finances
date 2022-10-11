@@ -13,5 +13,5 @@ export type Savings = {
     name: string,
     price: string,
     date: string,
-    type: SavingType
+    type: string
 }
